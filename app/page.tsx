@@ -1,3 +1,5 @@
+import { FaInstagram, FaTiktok } from "react-icons/fa6";
+
 export default function Home() {
   return (
     <main className="landing-page">
@@ -346,7 +348,6 @@ export default function Home() {
               className="session-option session-option-featured"
               aria-labelledby="package-title"
             >
-              <span className="session-saving">R$ 100 por sessão</span>
               <h3 id="package-title">Pacote antecipado</h3>
 
               <p className="session-price">
@@ -389,6 +390,52 @@ export default function Home() {
               </p>
             </div>
           </aside>
+        </div>
+      </section>
+
+      <section className="contact-section" aria-labelledby="contact-title">
+        <div className="contact-shell">
+          <div className="contact-mark" aria-hidden="true" />
+          <h2 id="contact-title">Você não precisa enfrentar isso sozinho.</h2>
+          <p>
+            Se você quer começar a construir uma vida em sobriedade, fale comigo.
+            O primeiro passo pode ser uma conversa.
+          </p>
+
+          <a
+            className="contact-cta"
+            href="https://wa.me/5592991673738"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Quero iniciar minha terapia
+          </a>
+
+          <div className="social-links" aria-label="Redes sociais">
+            <span>Acompanhe meu trabalho</span>
+            <div>
+              <a
+                className="social-link instagram-link"
+                href="https://www.instagram.com/eduwiebusch/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de Eduardo Wiebusch"
+              >
+                <FaInstagram aria-hidden="true" />
+                <span>Instagram</span>
+              </a>
+              <a
+                className="social-link tiktok-link"
+                href="https://www.tiktok.com/@eduwiebusch"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="TikTok de Eduardo Wiebusch"
+              >
+                <FaTiktok aria-hidden="true" />
+                <span>TikTok</span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -97,12 +97,18 @@ test("renders the therapist landing page", async () => {
   assert.match(html, /duas sessões por semana/);
   assert.match(html, /Pacote antecipado/);
   assert.match(html, />R\$ 400<\/strong>/);
-  assert.match(html, /R\$ 100 por sessão/);
+  assert.doesNotMatch(html, /R\$ 100 por sessão/);
   assert.match(html, /Quatro sessões pagas antecipadamente/);
   assert.doesNotMatch(html, /Agendar sessão|Garantir pacote/i);
   assert.match(html, /Contato disponível 24 horas/);
   assert.match(html, /ligue para o SAMU pelo 192/);
   assert.match(html, /o CVV atende gratuitamente pelo 188/);
+  assert.match(html, /Você não precisa enfrentar isso sozinho\./);
+  assert.match(html, />Quero iniciar minha terapia<\/a>/);
+  assert.match(html, /href="https:\/\/www\.instagram\.com\/eduwiebusch\/"/);
+  assert.match(html, /aria-label="Instagram de Eduardo Wiebusch"/);
+  assert.match(html, /href="https:\/\/www\.tiktok\.com\/@eduwiebusch"/);
+  assert.match(html, /aria-label="TikTok de Eduardo Wiebusch"/);
   assert.match(
     html,
     /Sou terapeuta com foco em dependência química\. Ajudo pessoas a entenderem por que usam, como mudar de verdade e como reconstruir uma vida com sentido\./,
