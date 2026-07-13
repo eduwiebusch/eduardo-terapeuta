@@ -1,17 +1,37 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Manrope } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
-});
-
-const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
-  subsets: ["latin"],
-  weight: ["600"],
-  style: ["italic"],
+const lato = localFont({
+  variable: "--font-lato",
+  display: "swap",
+  src: [
+    {
+      path: "./fonts/Lato-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Lato-Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+    {
+      path: "./fonts/Lato-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/Lato-BoldItalic.ttf",
+      weight: "700",
+      style: "italic",
+    },
+    {
+      path: "./fonts/Lato-Black.ttf",
+      weight: "900",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata: Metadata = {
@@ -27,9 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={`${manrope.variable} ${cormorant.variable}`}>
-        {children}
-      </body>
+      <body className={lato.variable}>{children}</body>
     </html>
   );
 }
