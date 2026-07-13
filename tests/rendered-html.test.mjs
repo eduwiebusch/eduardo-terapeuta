@@ -85,9 +85,9 @@ test("renders the therapist landing page", async () => {
   assert.match(html, />4–5 critérios<\/strong>/);
   assert.match(html, />6 ou mais<\/strong>/);
   assert.match(html, /O quadro pode mudar/);
-  assert.match(
+  assert.doesNotMatch(
     html,
-    /Com o cuidado adequado, a dependência química pode ser tratada, e uma nova forma de viver pode ser construída\./,
+    /Com o cuidado adequado, a dependência química pode ser tratada/,
   );
   assert.match(
     html,

@@ -316,10 +316,6 @@ export default function Home() {
             </strong>
           </p>
 
-          <p className="science-closing">
-            Com o cuidado adequado, a dependência química pode ser tratada, e uma
-            nova forma de viver pode ser construída.
-          </p>
         </div>
       </section>
     </main>

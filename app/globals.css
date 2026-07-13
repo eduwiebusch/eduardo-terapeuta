@@ -587,18 +587,6 @@ body {
   font-weight: 700;
 }
 
-.science-closing {
-  max-width: 48rem;
-  margin: clamp(2.5rem, 5vw, 4rem) auto 0;
-  color: var(--accent-soft);
-  font-size: clamp(1.15rem, 1.8vw, 1.5rem);
-  font-weight: 700;
-  letter-spacing: -0.025em;
-  line-height: 1.55;
-  text-align: center;
-  text-wrap: balance;
-}
-
 .hero-mark,
 .hero h1,
 .hero p,
