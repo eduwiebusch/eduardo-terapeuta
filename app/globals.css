@@ -121,7 +121,7 @@ body {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(3rem, 6.3vw, 6.7rem);
+  font-size: clamp(2.85rem, 5.65vw, 6rem);
   font-weight: 750;
   letter-spacing: -0.065em;
   line-height: 0.98;
@@ -147,9 +147,45 @@ body {
   text-wrap: balance;
 }
 
+.primary-cta {
+  display: inline-flex;
+  min-height: 3.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: clamp(1.75rem, 4vh, 2.75rem);
+  padding: 0.95rem 1.65rem;
+  border: 1px solid var(--accent-soft);
+  border-radius: 0.2rem;
+  background: var(--accent-soft);
+  box-shadow: 0 1rem 3rem rgb(188 109 69 / 16%);
+  color: #0b0a09;
+  font-size: 0.95rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    background-color 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.primary-cta:hover {
+  border-color: var(--foreground);
+  background: var(--foreground);
+  box-shadow: 0 1.25rem 3.5rem rgb(188 109 69 / 24%);
+}
+
+.primary-cta:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 5px;
+}
+
 .hero-mark,
 .hero h1,
-.hero p {
+.hero p,
+.primary-cta {
   animation: rise-in 900ms cubic-bezier(0.2, 0.75, 0.25, 1) both;
 }
 
@@ -159,6 +195,10 @@ body {
 
 .hero p {
   animation-delay: 220ms;
+}
+
+.primary-cta {
+  animation-delay: 320ms;
 }
 
 @keyframes rise-in {
@@ -189,7 +229,7 @@ body {
   }
 
   .hero h1 {
-    font-size: clamp(2.8rem, 13vw, 4.15rem);
+    font-size: clamp(2.55rem, 11.5vw, 3.7rem);
     letter-spacing: -0.06em;
     line-height: 0.99;
   }
@@ -202,7 +242,8 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .hero-mark,
   .hero h1,
-  .hero p {
+  .hero p,
+  .primary-cta {
     animation: none;
   }
 }

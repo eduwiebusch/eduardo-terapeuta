@@ -18,6 +18,15 @@ export default function Home() {
           entenderem por que usam, como mudar de verdade e como reconstruir uma
           vida com sentido.
         </p>
+
+        <a
+          className="primary-cta"
+          href="https://wa.me/5592991673738"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Quero começar minha terapia
+        </a>
       </section>
     </main>
   );

@@ -39,6 +39,8 @@ test("renders the therapist landing page", async () => {
     /Você pode parar de usar drogas e aprender a viver uma/,
   );
   assert.match(html, /<em>vida que vale a pena ser vivida<\/em>\./);
+  assert.match(html, /href="https:\/\/wa\.me\/5592991673738"/);
+  assert.match(html, />Quero começar minha terapia<\/a>/);
   assert.match(
     html,
     /Sou terapeuta com foco em dependência química\. Ajudo pessoas a entenderem por que usam, como mudar de verdade e como reconstruir uma vida com sentido\./,
