@@ -53,6 +53,15 @@ test("renders the therapist landing page", async () => {
     /Estudo diariamente psicologia, comportamento humano e dependência química, e atendo pessoas que querem parar de usar e aprender a viver com propósito, consciência e liberdade\./,
   );
   assert.match(html, /Como funciona o meu trabalho/);
+  assert.match(
+    html,
+    /A dependência química é um transtorno psiquiátrico complexo\./,
+  );
+  assert.match(
+    html,
+    /Por isso, não existem soluções mágicas, fórmulas prontas ou promessas de transformação imediata\./,
+  );
+  assert.doesNotMatch(html, /não acredito em soluções rápidas/);
   assert.match(html, /Compreender o que mantém o ciclo/);
   assert.match(html, /Desenvolver novas formas de lidar com a vida/);
   assert.match(html, /Aprender também com as recaídas/);

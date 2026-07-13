@@ -82,14 +82,14 @@ export default function Home() {
 
               <div className="work-intro-copy">
                 <p>
-                  A dependência química é um problema complexo. Ela pode envolver
-                  hábitos desenvolvidos durante anos, emoções difíceis, conflitos
-                  nos relacionamentos, impulsividade, solidão, rotina
-                  desorganizada e maneiras de enfrentar o sofrimento que, em algum
-                  momento, passaram a incluir o uso de substâncias.
+                  A dependência química é um transtorno psiquiátrico complexo. Ela
+                  pode envolver hábitos desenvolvidos durante anos, emoções
+                  difíceis, conflitos nos relacionamentos, impulsividade, solidão,
+                  rotina desorganizada e maneiras de enfrentar o sofrimento que,
+                  em algum momento, passaram a incluir o uso de substâncias.
                 </p>
                 <p>
-                  Por isso, não acredito em soluções rápidas, fórmulas prontas ou
+                  Por isso, não existem soluções mágicas, fórmulas prontas ou
                   promessas de transformação imediata. A mudança acontece por meio
                   de compreensão, prática, estratégia e construção gradual de
                   novas formas de viver.
