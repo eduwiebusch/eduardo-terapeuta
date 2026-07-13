@@ -318,6 +318,77 @@ export default function Home() {
 
         </div>
       </section>
+
+      <section className="session-section" aria-labelledby="session-title">
+        <div className="session-shell">
+          <header className="session-header">
+            <div className="session-mark" aria-hidden="true" />
+            <h2 id="session-title">Sessões e acompanhamento</h2>
+          </header>
+
+          <dl className="session-facts">
+            <div className="session-card">
+              <dt>Valor da sessão</dt>
+              <dd>
+                <strong>R$ 120</strong>
+                <span>Pagamento por sessão.</span>
+              </dd>
+            </div>
+
+            <div className="session-card">
+              <dt>Duração</dt>
+              <dd>
+                <strong>50 minutos</strong>
+                <span>Tempo aproximado de cada encontro.</span>
+              </dd>
+            </div>
+
+            <div className="session-card session-card-wide">
+              <dt>Frequência</dt>
+              <dd>
+                <strong>Uma vez por semana</strong>
+                <span>
+                  Quando o caso exigir um acompanhamento mais próximo, pode ser
+                  sugerida a frequência de duas sessões por semana.
+                </span>
+              </dd>
+            </div>
+
+            <div className="session-card session-package">
+              <dt>Pacote antecipado</dt>
+              <dd>
+                <strong>R$ 400</strong>
+                <span>
+                  Quatro sessões pagas antecipadamente, por R$ 100 cada.
+                </span>
+              </dd>
+            </div>
+          </dl>
+
+          <aside className="urgent-support" aria-labelledby="support-title">
+            <div className="urgent-support-heading">
+              <span>Suporte durante o acompanhamento</span>
+              <h3 id="support-title">Contato disponível 24 horas</h3>
+            </div>
+
+            <div className="urgent-support-copy">
+              <p>
+                Durante o acompanhamento, você poderá ligar para mim a qualquer
+                hora em uma situação urgente relacionada ao processo terapêutico.
+                Esse suporte oferece um contato mais próximo nos momentos de maior
+                vulnerabilidade.
+              </p>
+              <p className="emergency-note">
+                Esse contato não substitui serviços de urgência ou emergência
+                médica. Em caso de risco imediato à vida, overdose, intoxicação ou
+                outra emergência médica, ligue para o SAMU pelo 192 ou procure um
+                pronto atendimento. Para apoio emocional e prevenção do suicídio,
+                o CVV atende gratuitamente pelo 188.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
     </main>
   );
 }

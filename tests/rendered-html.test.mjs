@@ -89,6 +89,16 @@ test("renders the therapist landing page", async () => {
     html,
     /Com o cuidado adequado, a dependência química pode ser tratada/,
   );
+  assert.match(html, /Sessões e acompanhamento/);
+  assert.match(html, />R\$ 120<\/strong>/);
+  assert.match(html, />50 minutos<\/strong>/);
+  assert.match(html, />Uma vez por semana<\/strong>/);
+  assert.match(html, /duas sessões por semana/);
+  assert.match(html, />R\$ 400<\/strong>/);
+  assert.match(html, /Quatro sessões pagas antecipadamente, por R\$ 100 cada\./);
+  assert.match(html, /Contato disponível 24 horas/);
+  assert.match(html, /ligue para o SAMU pelo 192/);
+  assert.match(html, /o CVV atende gratuitamente pelo 188/);
   assert.match(
     html,
     /Sou terapeuta com foco em dependência química\. Ajudo pessoas a entenderem por que usam, como mudar de verdade e como reconstruir uma vida com sentido\./,
