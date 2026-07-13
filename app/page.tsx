@@ -324,46 +324,48 @@ export default function Home() {
           <header className="session-header">
             <div className="session-mark" aria-hidden="true" />
             <h2 id="session-title">Sessões e acompanhamento</h2>
+            <p>Escolha a forma de pagamento que faz mais sentido para você.</p>
           </header>
 
-          <dl className="session-facts">
-            <div className="session-card">
-              <dt>Valor da sessão</dt>
-              <dd>
+          <div className="session-options">
+            <article className="session-option" aria-labelledby="single-session-title">
+              <h3 id="single-session-title">Sessão individual</h3>
+
+              <p className="session-price">
                 <strong>R$ 120</strong>
-                <span>Pagamento por sessão.</span>
-              </dd>
-            </div>
+                <span>/ sessão</span>
+              </p>
 
-            <div className="session-card">
-              <dt>Duração</dt>
-              <dd>
-                <strong>50 minutos</strong>
-                <span>Tempo aproximado de cada encontro.</span>
-              </dd>
-            </div>
+              <ul className="session-details">
+                <li>Aproximadamente 50 minutos</li>
+                <li>Uma sessão por semana</li>
+              </ul>
+            </article>
 
-            <div className="session-card session-card-wide">
-              <dt>Frequência</dt>
-              <dd>
-                <strong>Uma vez por semana</strong>
-                <span>
-                  Quando o caso exigir um acompanhamento mais próximo, pode ser
-                  sugerida a frequência de duas sessões por semana.
-                </span>
-              </dd>
-            </div>
+            <article
+              className="session-option session-option-featured"
+              aria-labelledby="package-title"
+            >
+              <span className="session-saving">R$ 100 por sessão</span>
+              <h3 id="package-title">Pacote antecipado</h3>
 
-            <div className="session-card session-package">
-              <dt>Pacote antecipado</dt>
-              <dd>
+              <p className="session-price">
                 <strong>R$ 400</strong>
-                <span>
-                  Quatro sessões pagas antecipadamente, por R$ 100 cada.
-                </span>
-              </dd>
-            </div>
-          </dl>
+                <span>/ 4 sessões</span>
+              </p>
+
+              <ul className="session-details">
+                <li>Quatro sessões pagas antecipadamente</li>
+                <li>Aproximadamente 50 minutos por sessão</li>
+                <li>Uma sessão por semana</li>
+              </ul>
+            </article>
+          </div>
+
+          <p className="session-frequency-note">
+            Em casos graves, pode ser sugerida a frequência de duas sessões por
+            semana para manter um contato mais próximo durante o acompanhamento.
+          </p>
 
           <aside className="urgent-support" aria-labelledby="support-title">
             <div className="urgent-support-heading">

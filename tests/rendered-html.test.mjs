@@ -90,12 +90,16 @@ test("renders the therapist landing page", async () => {
     /Com o cuidado adequado, a dependência química pode ser tratada/,
   );
   assert.match(html, /Sessões e acompanhamento/);
+  assert.match(html, /Sessão individual/);
   assert.match(html, />R\$ 120<\/strong>/);
-  assert.match(html, />50 minutos<\/strong>/);
-  assert.match(html, />Uma vez por semana<\/strong>/);
+  assert.match(html, /Aproximadamente 50 minutos/);
+  assert.match(html, /Uma sessão por semana/);
   assert.match(html, /duas sessões por semana/);
+  assert.match(html, /Pacote antecipado/);
   assert.match(html, />R\$ 400<\/strong>/);
-  assert.match(html, /Quatro sessões pagas antecipadamente, por R\$ 100 cada\./);
+  assert.match(html, /R\$ 100 por sessão/);
+  assert.match(html, /Quatro sessões pagas antecipadamente/);
+  assert.doesNotMatch(html, /Agendar sessão|Garantir pacote/i);
   assert.match(html, /Contato disponível 24 horas/);
   assert.match(html, /ligue para o SAMU pelo 192/);
   assert.match(html, /o CVV atende gratuitamente pelo 188/);
