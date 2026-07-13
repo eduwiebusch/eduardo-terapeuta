@@ -52,6 +52,11 @@ test("renders the therapist landing page", async () => {
     html,
     /Estudo diariamente psicologia, comportamento humano e dependência química, e atendo pessoas que querem parar de usar e aprender a viver com propósito, consciência e liberdade\./,
   );
+  assert.match(html, /Se a minha história falou com você, continue por perto\./);
+  assert.match(html, /aria-label="Seguir Eduardo Wiebusch no Instagram"/);
+  assert.match(html, /aria-label="Seguir Eduardo Wiebusch no TikTok"/);
+  assert.match(html, /class="instagram-float"/);
+  assert.match(html, />Siga no Instagram<\/span>/);
   assert.match(html, /Como funciona o meu trabalho/);
   assert.match(
     html,

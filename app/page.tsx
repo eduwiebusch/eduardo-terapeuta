@@ -63,6 +63,36 @@ export default function Home() {
                 aprender a viver com propósito, consciência e liberdade.
               </p>
             </div>
+
+            <div className="story-social">
+              <p>
+                Se a minha história falou com você, continue por perto. No
+                Instagram e no TikTok compartilho conteúdos diretos sobre
+                dependência química, comportamento e mudança.
+              </p>
+              <div className="story-social-links">
+                <a
+                  className="social-link instagram-link"
+                  href="https://www.instagram.com/eduwiebusch/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Seguir Eduardo Wiebusch no Instagram"
+                >
+                  <FaInstagram aria-hidden="true" />
+                  <span>Instagram</span>
+                </a>
+                <a
+                  className="social-link tiktok-link"
+                  href="https://www.tiktok.com/@eduwiebusch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Seguir Eduardo Wiebusch no TikTok"
+                >
+                  <FaTiktok aria-hidden="true" />
+                  <span>TikTok</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -438,6 +468,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <a
+        className="instagram-float"
+        href="https://www.instagram.com/eduwiebusch/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Seguir Eduardo Wiebusch no Instagram"
+      >
+        <FaInstagram aria-hidden="true" />
+        <span>Siga no Instagram</span>
+      </a>
     </main>
   );
 }

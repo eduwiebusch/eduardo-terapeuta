@@ -291,6 +291,28 @@ body {
   margin-top: 1.35rem;
 }
 
+.story-social {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-top: clamp(1.75rem, 3vw, 2.25rem);
+  border-top: 1px solid rgb(216 162 126 / 22%);
+}
+
+.story-social > p {
+  margin: 0;
+  color: var(--foreground);
+  font-size: clamp(1rem, 1.35vw, 1.12rem);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  line-height: 1.65;
+}
+
+.story-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.35rem;
+  gap: 0.75rem;
+}
+
 .work-section {
   position: relative;
   padding: clamp(6rem, 11vw, 10rem) clamp(1.5rem, 6vw, 6rem);
@@ -856,7 +878,8 @@ body {
 }
 
 .contact-cta:focus-visible,
-.social-link:focus-visible {
+.social-link:focus-visible,
+.instagram-float:focus-visible {
   outline: 2px solid var(--foreground);
   outline-offset: 5px;
 }
@@ -921,6 +944,42 @@ body {
 .tiktok-link svg {
   color: #fff;
   filter: drop-shadow(-1px 0 #25f4ee) drop-shadow(1px 0 #fe2c55);
+}
+
+.instagram-float {
+  position: fixed;
+  z-index: 20;
+  right: clamp(1rem, 2.5vw, 2rem);
+  bottom: clamp(1rem, 2.5vw, 2rem);
+  display: inline-flex;
+  min-height: 3.6rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  padding: 0.9rem 1.2rem;
+  border: 1px solid rgb(255 255 255 / 30%);
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f9ce34 0%, #ee2a7b 48%, #6228d7 100%);
+  box-shadow: 0 1rem 2.75rem rgb(0 0 0 / 42%);
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  text-decoration: none;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.instagram-float svg {
+  width: 1.35rem;
+  height: 1.35rem;
+  flex: 0 0 auto;
+}
+
+.instagram-float:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1.25rem 3.25rem rgb(0 0 0 / 52%);
 }
 
 .hero-mark,
@@ -1000,6 +1059,14 @@ body {
 
   .story-copy p {
     line-height: 1.68;
+  }
+
+  .story-social-links {
+    flex-direction: column;
+  }
+
+  .story-social-links .social-link {
+    width: 100%;
   }
 
   .work-section {
@@ -1141,6 +1208,23 @@ body {
 
   .social-link {
     width: 100%;
+  }
+
+  .instagram-float {
+    width: 3.6rem;
+    min-height: 3.6rem;
+    padding: 0;
+  }
+
+  .instagram-float span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
   }
 }
 
