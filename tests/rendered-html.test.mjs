@@ -74,6 +74,21 @@ test("renders the therapist landing page", async () => {
     html,
     /O objetivo não é somente parar de usar drogas\. É construir uma vida com mais consciência, propósito e liberdade — uma vida na qual a sobriedade faça sentido e valha a pena ser vivida\./,
   );
+  assert.match(html, /Dependência química não é falta de força de vontade/);
+  assert.match(html, /Transtorno por Uso de Substâncias/);
+  assert.match(html, /A gravidade não depende apenas da quantidade/);
+  assert.match(
+    html,
+    /dois ou três indicam grau leve; quatro ou cinco, moderado; e seis ou mais, grave\./,
+  );
+  assert.match(html, />2–3 critérios<\/strong>/);
+  assert.match(html, />4–5 critérios<\/strong>/);
+  assert.match(html, />6 ou mais<\/strong>/);
+  assert.match(html, /O quadro pode mudar/);
+  assert.match(
+    html,
+    /Com o cuidado adequado, a dependência química pode ser tratada, e uma nova forma de viver pode ser construída\./,
+  );
   assert.match(
     html,
     /Sou terapeuta com foco em dependência química\. Ajudo pessoas a entenderem por que usam, como mudar de verdade e como reconstruir uma vida com sentido\./,

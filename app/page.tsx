@@ -199,6 +199,129 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <section className="science-section" aria-labelledby="science-title">
+        <div className="science-shell">
+          <header className="science-header">
+            <div className="science-mark" aria-hidden="true" />
+            <h2 id="science-title">
+              Dependência química não é falta de força de vontade
+            </h2>
+          </header>
+
+          <div className="science-intro">
+            <p>
+              A dependência química, chamada no DSM-5-TR de{" "}
+              <strong>Transtorno por Uso de Substâncias</strong>, é um transtorno
+              mental reconhecido pela ciência.
+            </p>
+            <p>
+              Uma de suas principais características é a dificuldade de
+              interromper ou controlar o uso, mesmo quando a droga já está
+              causando prejuízos à saúde, aos relacionamentos, ao trabalho, às
+              finanças ou a outras áreas importantes da vida.
+            </p>
+            <p>
+              Por isso, não se trata simplesmente de “querer ou não querer
+              parar”. Muitas pessoas reconhecem as consequências do uso, sentem
+              culpa, fazem promessas e tentam mudar — mas continuam presas a um
+              ciclo que precisa ser compreendido e tratado.
+            </p>
+          </div>
+
+          <article className="science-panel severity-panel">
+            <div className="science-panel-heading">
+              <span aria-hidden="true">01</span>
+              <h3>A gravidade não depende apenas da quantidade</h3>
+            </div>
+
+            <div className="science-panel-copy">
+              <p>
+                O Transtorno por Uso de Substâncias pode ser classificado como{" "}
+                <strong>leve, moderado ou grave</strong>. Essa avaliação não
+                considera somente quanto ou com que frequência a pessoa usa
+                determinada droga.
+              </p>
+              <p>
+                Também são observadas dificuldades como perda de controle,
+                tentativas frustradas de parar, fissura, uso em situações de
+                risco, abandono de responsabilidades e continuidade do consumo
+                apesar dos problemas provocados por ele. No DSM-5, a gravidade é
+                definida pela quantidade de critérios identificados: dois ou
+                três indicam grau leve; quatro ou cinco, moderado; e seis ou mais,
+                grave.
+              </p>
+
+              <ul
+                className="severity-scale"
+                aria-label="Classificação da gravidade pelo número de critérios"
+              >
+                <li>
+                  <span>Leve</span>
+                  <strong>2–3 critérios</strong>
+                </li>
+                <li>
+                  <span>Moderado</span>
+                  <strong>4–5 critérios</strong>
+                </li>
+                <li>
+                  <span>Grave</span>
+                  <strong>6 ou mais</strong>
+                </li>
+              </ul>
+
+              <p>
+                Isso significa que duas pessoas que utilizam a mesma substância
+                e em quantidades parecidas podem precisar de cuidados
+                completamente diferentes.
+              </p>
+            </div>
+          </article>
+
+          <article className="science-panel change-panel">
+            <div className="science-panel-heading">
+              <span aria-hidden="true">02</span>
+              <h3>O quadro pode mudar</h3>
+            </div>
+
+            <div className="science-panel-copy">
+              <p>
+                A gravidade não é uma sentença definitiva. Sem atenção adequada,
+                um quadro inicialmente leve pode se agravar. Por outro lado, com
+                tratamento, apoio, estratégia e mudanças sustentadas, a pessoa
+                pode reduzir os sintomas e alcançar a remissão.
+              </p>
+              <p>
+                Cada momento da recuperação exige uma atenção diferente. Em
+                alguns casos, o trabalho pode se concentrar na identificação de
+                gatilhos, na reorganização da rotina e na prevenção de recaídas.
+                Em outros, pode ser necessário envolver familiares, fortalecer a
+                rede de apoio ou trabalhar de maneira integrada com psicólogos,
+                médicos, psiquiatras e outros serviços de saúde.
+              </p>
+              <p>
+                Meu trabalho começa pela compreensão de cada pessoa: sua história,
+                suas dificuldades, os prejuízos que vem enfrentando e os recursos
+                que já possui. A partir disso, o acompanhamento é ajustado às suas
+                necessidades e ao momento em que ela se encontra.
+              </p>
+            </div>
+          </article>
+
+          <p className="science-question">
+            <strong>
+              A pergunta não é apenas “por que essa pessoa não para?”. A pergunta
+              mais importante é: “o que mantém esse ciclo e de que tipo de ajuda
+              ela precisa para conseguir mudar?”.
+            </strong>
+          </p>
+
+          <p className="science-closing">
+            Com o cuidado adequado, a dependência química pode ser tratada, e uma
+            nova forma de viver pode ser construída.
+          </p>
+        </div>
+      </section>
     </main>
   );
 }
