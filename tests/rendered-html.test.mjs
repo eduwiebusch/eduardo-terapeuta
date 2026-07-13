@@ -52,6 +52,19 @@ test("renders the therapist landing page", async () => {
     html,
     /Estudo diariamente psicologia, comportamento humano e dependência química, e atendo pessoas que querem parar de usar e aprender a viver com propósito, consciência e liberdade\./,
   );
+  assert.match(html, /Como funciona o meu trabalho/);
+  assert.match(html, /Compreender o que mantém o ciclo/);
+  assert.match(html, /Desenvolver novas formas de lidar com a vida/);
+  assert.match(html, /Aprender também com as recaídas/);
+  assert.match(html, /Repetir, ajustar e fortalecer/);
+  assert.match(
+    html,
+    /Analisar uma recaída não significa normalizá-la\. Significa transformar uma experiência dolorosa em informação útil para fortalecer a recuperação\./,
+  );
+  assert.match(
+    html,
+    /O objetivo não é somente parar de usar drogas\. É construir uma vida com mais consciência, propósito e liberdade — uma vida na qual a sobriedade faça sentido e valha a pena ser vivida\./,
+  );
   assert.match(
     html,
     /Sou terapeuta com foco em dependência química\. Ajudo pessoas a entenderem por que usam, como mudar de verdade e como reconstruir uma vida com sentido\./,
