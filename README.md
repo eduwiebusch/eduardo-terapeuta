@@ -1,5 +1,16 @@
 # eduardo-terapeuta
 
-Repositório do futuro site profissional de Eduardo, terapeuta especializado em dependência química.
+Landing page profissional de Eduardo, terapeuta com foco em dependência química.
 
-> O site ainda não foi desenvolvido.
+## Desenvolvimento
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
