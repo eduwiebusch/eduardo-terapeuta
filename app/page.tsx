@@ -364,7 +364,7 @@ export default function Home() {
               <h3 id="single-session-title">Sessão individual</h3>
 
               <p className="session-price">
-                <strong>R$ 120</strong>
+                <strong>R$ 150</strong>
                 <span>/ sessão</span>
               </p>
 
@@ -381,7 +381,7 @@ export default function Home() {
               <h3 id="package-title">Pacote antecipado</h3>
 
               <p className="session-price">
-                <strong>R$ 400</strong>
+                <strong>R$ 500</strong>
                 <span>/ 4 sessões</span>
               </p>
 

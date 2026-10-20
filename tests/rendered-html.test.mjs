@@ -96,12 +96,12 @@ test("renders the therapist landing page", async () => {
   );
   assert.match(html, /Sessões e acompanhamento/);
   assert.match(html, /Sessão individual/);
-  assert.match(html, />R\$ 120<\/strong>/);
+  assert.match(html, />R\$ 150<\/strong>/);
   assert.match(html, /Aproximadamente 50 minutos/);
   assert.match(html, /Uma sessão por semana/);
   assert.match(html, /duas sessões por semana/);
   assert.match(html, /Pacote antecipado/);
-  assert.match(html, />R\$ 400<\/strong>/);
+  assert.match(html, />R\$ 500<\/strong>/);
   assert.doesNotMatch(html, /R\$ 100 por sessão/);
   assert.match(html, /Quatro sessões pagas antecipadamente/);
   assert.doesNotMatch(html, /Agendar sessão|Garantir pacote/i);
